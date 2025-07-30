@@ -24,7 +24,7 @@ const BookDetail = () => {
   return (
     <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className="text-center lg:text-left">
+        <div className="text-center lg:text-left ml-8">
           <h1 className="text-5xl font-bold">{bookName}</h1>
           <p className="font-semibold mt-2">By: {author}</p>
           <div className="divider my-2"></div>

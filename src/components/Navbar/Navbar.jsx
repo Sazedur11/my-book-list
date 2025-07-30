@@ -1,10 +1,26 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const links = (
     <>
-      <Link to={"/"}>Home</Link>
-      <Link to={"/listedbooks"}>Listed Books</Link>
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          isActive
+            ? "text-green-500 border-b-1 border-green-500"
+            : "text-gray-400"
+        }
+      >
+        Home
+      </NavLink>
+      <NavLink 
+      to={"/listedbooks"}
+      className={({isActive})=>
+        isActive ? "text-green-500 border-b-1 border-green-500" : "text-gray-500"
+      }
+      >
+        Listed Books
+      </NavLink>
     </>
   );
 
@@ -34,15 +50,13 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-                {links}
+              {links}
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">My Books</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 gap-4">
-            {links}
-          </ul>
+          <ul className="menu menu-horizontal px-1 gap-4">{links}</ul>
         </div>
         <div className="navbar-end gap-2">
           <Link className="btn bg-green-600" to={"/"}>
