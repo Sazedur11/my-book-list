@@ -1,12 +1,13 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { addToStoredReadList, addToStoredWishlist } from "../../Utility/AddToDB";
 
 const BookDetail = () => {
   const { bookId } = useParams();
-  const Id = parseInt(bookId);
+  const id = parseInt(bookId);
 
   const data = useLoaderData();
 
-  const book = data.find((book) => book.bookId === Id);
+  const book = data.find((book) => book.bookId === id);
 
   const {
     author,
@@ -20,6 +21,13 @@ const BookDetail = () => {
     totalPages,
     yearOfPublishing,
   } = book;
+
+  const handleMarkAsRead = ()=>{
+    addToStoredReadList(id)
+  }
+  const handleAddToWishlist = () =>{
+    addToStoredWishlist(id)
+  }
 
   return (
     <div className="hero bg-base-200 min-h-screen">
@@ -43,8 +51,8 @@ const BookDetail = () => {
             <p>Year of Publishing: {yearOfPublishing}</p>
             <p>Rating: {rating}</p>
             <div className="mt-4">
-                <button className="btn btn-outline mr-4">Mark as Read</button>
-                <button className="btn btn-accent">Add to Wishlist</button>
+                <button onClick={()=> handleMarkAsRead(bookId)} className="btn btn-outline mr-4">Mark as Read</button>
+                <button onClick={()=>handleAddToWishlist(bookId)} className="btn btn-accent">Add to Wishlist</button>
             </div>
         </div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
