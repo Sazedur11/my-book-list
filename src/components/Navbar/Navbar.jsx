@@ -59,10 +59,10 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 gap-4">{links}</ul>
         </div>
         <div className="navbar-end gap-2">
-          <Link className="btn bg-green-600" to={"/"}>
+          <Link className="btn bg-green-600 text-white" to={"/"}>
             Sing In
           </Link>
-          <Link className="btn bg-cyan-500" to={"/"}>
+          <Link className="btn bg-cyan-500 text-white" to={"/"}>
             Sing Up
           </Link>
         </div>
