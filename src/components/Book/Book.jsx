@@ -29,7 +29,7 @@ const Book = ({ book }) => {
             {rating} <FaRegStar />
           </p>
         </div>
-        <Link  className="btn btn-soft btn-accent mt-4" to={`/book/${bookId}`}>More Details</Link>
+        <Link  className="btn btn-soft btn-accent mt-4" to={`/book/${bookId}`}>View Details</Link>
       </div>
   );
 };
