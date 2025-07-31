@@ -43,8 +43,8 @@ const BookDetail = () => {
             <p>Year of Publishing: {yearOfPublishing}</p>
             <p>Rating: {rating}</p>
             <div className="mt-4">
-                <button className="btn btn-outline mr-4">Read</button>
-                <button className="btn btn-accent">Wishlist</button>
+                <button className="btn btn-outline mr-4">Mark as Read</button>
+                <button className="btn btn-accent">Add to Wishlist</button>
             </div>
         </div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">

@@ -7,8 +7,8 @@ const Navbar = () => {
         to="/"
         className={({ isActive }) =>
           isActive
-            ? "text-green-500 border-b-1 border-green-500"
-            : "text-gray-400"
+            ? "text-green-500 border-b-1 border-green-500 font-bold"
+            : "font-semibold"
         }
       >
         Home
@@ -16,7 +16,7 @@ const Navbar = () => {
       <NavLink 
       to={"/listedbooks"}
       className={({isActive})=>
-        isActive ? "text-green-500 border-b-1 border-green-500" : "text-gray-500"
+        isActive ? "text-green-500 border-b-1 border-green-500 font-bold" : "font-semibold"
       }
       >
         Listed Books
