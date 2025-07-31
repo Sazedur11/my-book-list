@@ -1,12 +1,48 @@
-# React + Vite
+# 📚 My Book App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Site: 🌐 [my-book-by-sazedur.netlify.app](https://my-book-by-sazedur.netlify.app)  
+GitHub Repo: 🛠️ [github.com/Sazedur11/my-book-list](https://github.com/Sazedur11/my-book-list)
 
-Currently, two official plugins are available:
+A modern and minimalistic book listing web app built using **React.js**, **React Router**, **Tailwind CSS**, and **DaisyUI**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📖 View a list of interesting books
+- 📥 Add books to your read list
+- ✅ Mark books as read
+- 📋 View and manage your reading history
+- 💡 Beautiful UI with responsive design
+- 🌙 Built with Tailwind CSS and styled via DaisyUI
+
+---
+
+## 🛠️ Technologies Used
+
+| Tech              | Purpose                                  |
+|-------------------|------------------------------------------|
+| React.js          | Building the interactive UI              |
+| React Router DOM  | Routing between pages                    |
+| Tailwind CSS      | Utility-first CSS for styling            |
+| DaisyUI           | Tailwind component library               |
+| LocalStorage      | Storing user read list locally           |
+
+---
+
+## 📁 Project Structure
+
+```bash
+src/
+│
+├── components/        # Reusable components (e.g., Header, BookCard)
+├── pages/             # Pages (e.g., Home, ListedBooks)
+├── Utility/           # Helper functions (e.g., AddToDB.js)
+├── App.jsx            # App layout and route handler
+├── main.jsx           # ReactDOM entry point
+└── index.css          # Tailwind base styles and DaisyUI imports
+
+🧑 Author
+Sazedur Rahman
+🔗 GitHub Profile
+🌍 Live Website
